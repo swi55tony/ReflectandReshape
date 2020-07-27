@@ -81,14 +81,15 @@ if (currentTask == 'build') {
     cssConfig.use.unshift(MiniCssExtractPlugin.loader)
     postCSSPlugins.push(require('cssnano'))
     config.output = {
-        filename: '[name].[chunkhash].js]',
-        chunkFilename: '[name].[chunkhash].js]', 
+        filename: '[name].[chunkhash].js',
+        chunkFilename: '[name].[chunkhash].js', 
         path: path.resolve(__dirname, 'docs')
     }
     config.mode = 'production'
     config.optimization = {
         splitChunks: {chunks: 'all'}
     }
+
     config.plugins.push(
         new CleanWebpackPlugin(), 
         new MiniCssExtractPlugin({filename: 'styles.[chunkhash].css'}),
