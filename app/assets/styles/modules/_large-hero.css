@@ -1,5 +1,5 @@
 .large-hero{
-    border-bottom: 10px solid $mainBlue;
+    border-bottom: 0px solid $mainBlue;
      position: relative; 
      
 &__image {
@@ -17,16 +17,31 @@
     text-align: center;
 }
 
-&__title {
-    font-weight: 400;
+&__title1 {
+    font-weight: 300;
+    text-align: center;
     color: $mainBlue;
-       margin: 0.5;
-       font-size: 2rem;
-       padding-right: 200px;
-       padding-left: 200px;
+       margin: 0;
+       font-size: 1.5rem;
+       transform: translateY(-15%);
+     
 
     @mixin atSmall {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+}
+
+&__title2 {
+    font-weight: 400;
+    text-align: center;
+    color: $mainBlue;
+        margin: 0;
+        font-size: 2rem;
+        transform: translateY(10%);
+        
+    
+    @mixin atSmall {
+            font-size: 4rem;
     }
 
 }
