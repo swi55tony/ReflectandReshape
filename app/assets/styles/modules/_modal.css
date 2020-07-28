@@ -41,7 +41,7 @@
         color: $mainBlue;
 
         &:hover {
-            color: $mainOrange;
+            color: $mainGreen;
         }
     }
 }
