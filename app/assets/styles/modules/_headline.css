@@ -7,8 +7,16 @@
         font-size: 2.875rem;
     }
 
+&--sales {
+    color: red;
+}
+
 &--centered {
     text-align: center;
+}
+
+&--left {
+    text-align: left;
 }
 
 &--orange {
@@ -23,7 +31,7 @@
 }
 
 &--narrow {
-    max-width: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
