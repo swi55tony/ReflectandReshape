@@ -21,6 +21,7 @@
 @import "modules/_client-area";
 @import "modules/_site-optin";
 @import "modules/_lists";
+@import "modules/_cookie-consent";
 
 body {
     font-family: 'Roboto', sans-serif;
